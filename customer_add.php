@@ -13,6 +13,7 @@ $state = $_POST['state'];
 $zip = $_POST['zip'];
 $email = $_POST['email'];
 $phone = $_POST['phone'];
+
 $sql="INSERT INTO customers(firstName, lastName, address, city, state, zip, email, phone )
 VALUES('$fname','$lname', '$addr', '$city', '$state', '$zip', '$email', '$phone')";
 if ($conn->query($sql) === TRUE) {
@@ -22,8 +23,6 @@ if ($conn->query($sql) === TRUE) {
 }
 
 $conn->close();
-//header("Location:customer_add.html?result=1",true, 301);
-//exit;
 ?>
 
 <html>
