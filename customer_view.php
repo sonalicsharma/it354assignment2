@@ -51,6 +51,35 @@
                             </tr>
                         </thead>
                         <tbody>
+                            <?php
+                            $hn = 'www.it354.com';
+                            $db = 'it354_students';
+                            $un = 'it354_students';
+                            $pw = 'steinway';
+                            // Create connection
+                            $conn = new mysqli($hn, $un, $pw, $db);
+                            // Check connection
+                            if ($conn->connect_error) {
+                                die("Connection failed: " . $conn->connect_error);
+                            }
+
+                            $sql = "SELECT firstName, lastName, address , city, state ,zip, email, phone FROM customers";
+
+                            $result = mysqli_query($conn, $sql)or die(mysqli_error());
+                            $id = 1;
+                            while ($row = mysqli_fetch_array($result)) {
+                                echo "<tr><td>" . $id . "</td>";
+                                echo "<td>" . $row['firstName'] . "</td>";
+                                echo "<td>" . $row['lastName'] . "</td>";
+                                echo "<td>" . $row['address'] . "</td>";
+                                echo "<td>" . $row['city'] . "</td>";
+                                echo "<td>" . $row['state'] . "</td>";
+                                echo "<td>" . $row['zip'] . "</td>";
+                                echo "<td>" . $row['email'] . "</td>";
+                                echo "<td>" . $row['phone'] . "</td></tr>";
+                                $id++;
+                            }
+                            ?>
                         </tbody>
                     </table>
 	        </div>
