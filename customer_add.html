@@ -1,0 +1,122 @@
+ 
+
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <!-- Website Title & Description for Search Engine purposes -->
+        <title>Add customer details</title>
+        <meta name="description" content="">
+
+        <!-- Mobile viewport optimized -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <!-- Bootstrap CSS -->
+        <link href="includes/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>  
+        
+        <!-- Bootstrap CSS -->
+        <link href="includes/js/validator.js" rel="stylesheet" type="text/css"/>   
+
+        <!-- Custom CSS -->
+        <link href="includes/css/styles.css" rel="stylesheet">
+
+    </head>
+    <body>
+        <div class="container" id="main">
+            <div class="navbar navbar-fixed-top navbar-default">
+                <div class="container-fluid">
+                    <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+                    <button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Assignment 2</a>
+                    <div class="navbar-collapse collapse navbar-responsive-collapse">
+                        <ul class="nav navbar-nav">
+                            
+                            <li><a href = "customer_view.php">View</a></li>
+                            <li class = "active"><a>Add</a></li>
+                        </ul>
+                    </div><!-- end nav-responsive-collapse -->
+                </div><!-- end container -->
+            </div><!-- end navbar -->
+
+            <div class="tab-content">
+                <div class="tab-pane fade in active" id="add">
+                    <br/><br/>
+                    <!-- Form for entering the customer details -->
+                    <form class="form-horizontal" role="form" action="customer_add.php" method="post">
+                        <h2 class="col-sm-offset-2"> Add a customer</h2>
+                        <div class="form-group">
+                            <label class="control-label col-sm-4">First Name:</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" name="fname" placeholder="Enter first name" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-4">Last or Company:</label>
+                            <div class="col-sm-6">          
+                                <input type="text" class="form-control" name="lname" placeholder="Enter last name or company name" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-4">Address:</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" name="address" placeholder="Enter address" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-4">City:</label>
+                            <div class="col-sm-6">          
+                                <input type="text" class="form-control" name="city" placeholder="Enter city" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-4">State:</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" name="state" placeholder="Enter email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-4">Zip:</label>
+                            <div class="col-sm-6">          
+                                <input type="number" class="form-control" name="zip" placeholder="Enter zip" required />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-4">Email:</label>
+                            <div class="col-sm-6">
+                                <input type="email" class="form-control" name="email" placeholder="Enter email" required />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-4">Phone:</label>
+                            <div class="col-sm-6">          
+                                <input type="number" class="form-control" name="phone" placeholder="Enter phone" required>
+                            </div>
+                        </div>
+                        <div class="form-group">        
+                            <div class="col-sm-offset-4 col-sm-10">
+                                <button type="submit" class="btn btn-default">Submit</button>
+                            </div>
+                        </div>
+                    </form><!-- end of form -->
+                </div><!-- end of add tab content -->
+            </div><!-- end tab -->
+        </div><!-- end of container -->
+
+        <!-- All Javascript at the bottom of the page for faster page loading -->
+
+        <!-- First try for the online version of jQuery-->
+        <script src="http://code.jquery.com/jquery.js"></script>
+
+        <!-- If no online access, fallback to our hardcoded version of jQuery -->
+        <script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+        <script src="includes/js/bootstrap.js" type="text/javascript"></script>
+        <script src="includes/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="includes/js/npm.js" type="text/javascript"></script>
+    </body>
+</html>
+
