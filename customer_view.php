@@ -19,3 +19,7 @@
         Hello world!
     </body>
 </html>
+<<<<<<< cfc007b7fedd820870d91c27e6581d6139f9e7b6
+=======
+
+>>>>>>> Cleaned up customer_view.php
