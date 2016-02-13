@@ -1,1 +1,1 @@
-Redirect /index.html /customer_add.html
+DirectoryIndex customer_add.html
