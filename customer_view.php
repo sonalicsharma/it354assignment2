@@ -12,8 +12,6 @@
         <!-- Bootstrap CSS -->
         <link href="dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>   
 
-        <!-- Custom CSS -->
-        <link href="dist/css/styles.css" rel="stylesheet">  
     </head>
     <body>
         <div class="container" id="main">
@@ -35,6 +33,38 @@
                     </div><!-- end nav-responsive-collapse -->
                 </div><!-- end container -->
             </div><!-- end navbar -->
+            <div class="tab-content">
+                <br> <br><br>
+                <div class="container">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Last/Company Name</th>
+                                <th>First Name</th>
+                                <th>Address</th>
+                                <th>City</th>
+                                <th>State</th>
+                                <th>Zip</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+	        </div>
+            </div>
         </div>
+        <!-- All Javascript at the bottom of the page for faster page loading -->
+
+        <!-- First try for the online version of jQuery-->
+        <script src="http://code.jquery.com/jquery.js"></script>
+
+        <!-- If no online access, fallback to our hardcoded version of jQuery -->
+        <script>window.jQuery || document.write('<script src="dist/js/jquery-1.8.2.min.js"><\/script>')</script>
+        <script src="dist/js/bootstrap.js" type="text/javascript"></script>
+        <script src="dist/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="dist/js/npm.js" type="text/javascript"></script>
     </body>
 </html>
